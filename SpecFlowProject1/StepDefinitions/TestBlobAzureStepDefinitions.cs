@@ -2,7 +2,6 @@ using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Specialized;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
 
 namespace SpecFlowProject1.StepDefinitions
 {
