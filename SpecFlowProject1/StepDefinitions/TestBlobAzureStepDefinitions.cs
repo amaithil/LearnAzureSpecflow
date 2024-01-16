@@ -15,9 +15,9 @@ namespace SpecFlowProject1.StepDefinitions
         {
             IWebDriver driver = new ChromeDriver();
             Console.WriteLine("Hello World");
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=azpractstorage;AccountKey=EhKpUJMe1s0xzBZ868dXST6SeP2ZtXxzkPM6bbS8X2u75pDitTvuIxR9A48mEGU11R6/bxsFrhXb+ASt+JyDrA==;EndpointSuffix=core.windows.net";
+            string connectionString = "DefaultEndpointsProtocol=https;AccountName=azpractstorage;AccountKey=zERTFOskWDpEPtA5MMfG5A+bT/Xt/mXMVWO9c6NRkkEVz+5+BG7fcEG+VtCjddzHm5LWezfS5cAY+AStaQ24lA==;EndpointSuffix=core.windows.net";
             BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
-            BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient("newblobcontainer");
+            BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient("newblobcontainer1");
             BlockBlobClient blockBlobClient = containerClient.GetBlockBlobClient("TestData.csv");
             Console.WriteLine("Connection built to azure");
             try
